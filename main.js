@@ -21,7 +21,8 @@ const getRandomNumber = function(max) {
 /*******************
  * YOUR CODE BELOW *
  *******************/
-
+// let button_d6 = document.querySelector("#d6-button");
+let img_d6 = document.querySelector("#d6-roll");
 
 
 /*******************
