@@ -135,6 +135,7 @@ function d6RollFunc(){
 
     sixes.push(res);
     console.log(sixes)
+    median_d6.innerText = medianOfArr(sixes);
 }
 
 function dd6RollFunc(){
@@ -256,6 +257,7 @@ function dd6RollFunc(){
 
     doubleSixes.push(result);
     console.log(doubleSixes);
+    median_d_d6.innerText = medianOfArr(doubleSixes);
 }
 
 function d12RollFunc(){
@@ -289,6 +291,7 @@ function d12RollFunc(){
     }
     twelves.push(res);
     console.log(twelves);
+    median_d12.innerText = medianOfArr(twelves);
 }
 
 function d20RollFunc(){
@@ -338,6 +341,7 @@ function d20RollFunc(){
     }
     twenties.push(res);
     console.log(twenties);
+    median_d20.innerText = medianOfArr(twenties);
 }
 
 
@@ -388,5 +392,14 @@ function meanD20(twenties){
     mean_d20.innerText = mean;
 }
 
+function medianOfArr(arr1){
+    let sorted = arr1;
+    sorted = sorted.sort(function (a, b) { return a - b });
+    let median = Math.floor(sorted.length / 2);
+    if (sorted.length % 2 === 0) {
+        return (sorted[median -1] + sorted[median]) / 2;
+    }
+    return sorted[median];
+}
 
 
