@@ -49,33 +49,33 @@ img_d6.addEventListener('click', d6RollFunc);
 img_d6.addEventListener('click', function(){
     meanD6(sixes);
 });
-img_d6.addEventListener('click', function(){
-    medianD6(sixes);
-})
+// img_d6.addEventListener('click', function(){
+//     medianD6(sixes);
+// })
 
 img_d_d6_roll.addEventListener('click', dd6RollFunc);
 img_d_d6_roll.addEventListener('click', function(){
     meanDD6(doubleSixes);
 });
-img_d_d6_roll.addEventListener('click', function(){
-    medianDD6(doubleSixes);
-})
+// img_d_d6_roll.addEventListener('click', function(){
+//     medianDD6(doubleSixes);
+// })
 
 img_d12.addEventListener('click', d12RollFunc);
 img_d12.addEventListener('click', function(){
     meanD12(twelves);
 });
-img_d12.addEventListener('click', function(){
-    medianD12(twelves);
-})
+// img_d12.addEventListener('click', function(){
+//     medianD12(twelves);
+// })
 
 img_d20.addEventListener('click', d20RollFunc);
 img_d20.addEventListener('click', function(){
     meanD20(twenties);
 });
-img_d20.addEventListener('click', function(){
-    medianD20(twenties);
-})
+// img_d20.addEventListener('click', function(){
+//     medianD20(twenties);
+// })
 
 
 reset_button.addEventListener('click', resetFunction);
@@ -387,4 +387,6 @@ function meanD20(twenties){
     mean = Math.ceil(sum / len);
     mean_d20.innerText = mean;
 }
+
+
 
